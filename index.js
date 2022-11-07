@@ -4,6 +4,7 @@ let volume_Txt = document.querySelector(".volume_txt")
 let mass_Txt = document.querySelector(".mass_txt")
 const input_btn = document.querySelector("#input-btn")
 let unit_value = ""
+let typedValue = ""
 
 input_btn.addEventListener("click", function() {
     unit_value = input.value
