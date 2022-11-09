@@ -6,35 +6,34 @@ const input_btn = document.querySelector("#input-btn")
 let unit_value = ""
 let typedValue = ""
 
-input_btn.addEventListener("click", function() {
-    unit_value = input.value
-    typedValue = input.value
-    input.value = ""
-    // render(unit_value)
-    lengthCalc(typedValue, unit_value)
-    volumeCalc(typedValue, unit_value)
-    massCalc(typedValue, unit_value)
+input_btn.addEventListener("click", function () {
+  unit_value = input.value
+  typedValue = input.value
+  // render(unit_value)
+  lengthCalc(typedValue, unit_value)
+  volumeCalc(typedValue, unit_value)
+  massCalc(typedValue, unit_value)
 })
 
 function renderLength(input, fig, meters) {
-  let length = `<p class="length_txt"> ${input} meters = ${fig} feet | ${input} feet = ${meters} meters </p>`
- length_Txt.innerHTML = length
+  let length = `<p class="length_txt"> ${input} meters = ${fig} feet <br> ${input} feet = ${meters} meters </p>`
+  length_Txt.innerHTML = length
 }
 
 function renderVolume(input, fig, liters) {
-    let volume = `<p class="length_txt"> ${input} liters = ${fig} gallons | ${input} gallons = ${liters} liters </p>`;
-     volume_Txt.innerHTML = volume;
+  let volume = `<p class="length_txt"> ${input} liters = ${fig} gallons <br> ${input} gallons = ${liters} liters </p>`;
+  volume_Txt.innerHTML = volume;
 }
 
 function renderMass(input, fig, kilos) {
-    let mass = `<p class="length_txt"> ${input} kilos = ${fig} pounds | ${input} pounds = ${kilos} kilos </p>`;
-     mass_Txt.innerHTML = mass;
+  let mass = `<p class="length_txt"> ${input} kilos = ${fig} pounds <br> ${input} pounds = ${kilos} kilos </p>`;
+  mass_Txt.innerHTML = mass;
 }
 
 function lengthCalc(input, fig) {
-    let calculation = Number(fig) * 3.281
-    let calc_feet = Number(fig) / 3.281
-    renderLength(input, calculation.toFixed(3), calc_feet.toFixed(3))
+  let calculation = Number(fig) * 3.281
+  let calc_feet = Number(fig) / 3.281
+  renderLength(input, calculation.toFixed(3), calc_feet.toFixed(3))
 
 }
 
