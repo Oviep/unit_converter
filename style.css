@@ -1,8 +1,12 @@
 * {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
 }
-
+body {
+  width: 100vw;
+  background: #1f2937;
+}
 
 /* .metric-header {
   margin-top: 200px;
@@ -11,27 +15,32 @@
 h1 {
   color: white;
   padding-top: 25px;
+  font-size: 3rem;
 }
 
 #container {
-  background:#6943ff;
+  background: #6943ff;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 40px;
+  height: 400px;
 }
 
 #container1 {
-  background:#1f2937;
   text-align: center;
-  margin-top: -30px;
-  margin-bottom: 10px;
-  padding-bottom: 20px;
-  padding-top: -19px;
-
-
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  height: 500px;
 }
 
 #input {
-  width: 117px;
+  width: 150px;
   height: 83px;
   text-align: center;
   font-size: 40px;
@@ -43,35 +52,45 @@ h1 {
   outline: none;
   border-radius: 5px;
   padding: 10px;
-  margin-top: 20px;
+  margin: 30px;
 }
 
 #input-btn {
-  margin-top: 40px;
   padding: 10px 30px;
   border-radius: 5px;
   border: none;
   font-weight: bold;
+  font-size: 2em;
+  cursor: pointer;
+  color: green;
 }
 
-.container1 {
-  
-}
 .metric_heading {
- border: 1px solid #273549;
+  border: 1px solid #273549;
   width: 400px;
-   margin: 30px auto;
+  margin: 30px auto;
   padding: 40px 50px;
   background: #273549;
   border-radius: 5px;
 }
 
-h3 {
-   color: #ccc1ff;
+.output {
+  width: 500px;
+  text-align: center;
 }
 
-.length_txt, .volume_txt, .mass_txt {
+h3 {
+  color: #ccc1ff;
+  font-size: 2rem;
+}
 
+p {
+  font-size: 30px;
+}
+
+.length_txt,
+.volume_txt,
+.mass_txt {
   color: white;
-  margin-top: 10px;
+  margin: 15px;
 }
