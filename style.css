@@ -6,6 +6,7 @@
 body {
   width: 100vw;
   background: #1f2937;
+  overflow-x: hidden;
 }
 
 /* .metric-header {
@@ -36,7 +37,7 @@ h1 {
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-  height: 500px;
+  margin-top: 50px;
 }
 
 #input {
@@ -67,16 +68,12 @@ h1 {
 
 .metric_heading {
   border: 1px solid #273549;
-  width: 400px;
+  width: 600px;
+  text-align: center;
   margin: 30px auto;
   padding: 40px 50px;
   background: #273549;
   border-radius: 5px;
-}
-
-.output {
-  width: 500px;
-  text-align: center;
 }
 
 h3 {
